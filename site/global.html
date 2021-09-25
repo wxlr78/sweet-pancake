@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_814274b38f6e4cc19974aef2daa219af {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_814274b38f6e4cc19974aef2daa219af" ></div>
+        
+</body>
+<script>    
+    
+            var map_814274b38f6e4cc19974aef2daa219af = L.map(
+                "map_814274b38f6e4cc19974aef2daa219af",
+                {
+                    center: [56.852593, 53.204843],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d73ed546902947dbab71847b6972d30a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var marker_8d2bd7b98d1d4cbc9f9e6edbc0ac50d7 = L.marker(
+                [58.245766, 52.105408],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_fc998a2c8e274f138da6083505f58671 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_8d2bd7b98d1d4cbc9f9e6edbc0ac50d7.setIcon(icon_fc998a2c8e274f138da6083505f58671);
+        
+    
+        var popup_3e1ec199433746989289f53bb56bb38d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7f76b123e4841f2a51a8a0df220b5d9 = $(`<div id="html_d7f76b123e4841f2a51a8a0df220b5d9" style="width: 100.0%; height: 100.0%;">Яр: 45</div>`)[0];
+            popup_3e1ec199433746989289f53bb56bb38d.setContent(html_d7f76b123e4841f2a51a8a0df220b5d9);
+        
+
+        marker_8d2bd7b98d1d4cbc9f9e6edbc0ac50d7.bindPopup(popup_3e1ec199433746989289f53bb56bb38d)
+        ;
+
+        
+    
+    
+            var marker_6b24e460d90c4311b2d44771d676ad67 = L.marker(
+                [58.1408, 52.674122],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_596c4650611f4863ae7785b9a8961665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6b24e460d90c4311b2d44771d676ad67.setIcon(icon_596c4650611f4863ae7785b9a8961665);
+        
+    
+        var popup_48bb02fd93f944299ba4d26ec4d544b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0a32d37cdba44e6a836a2cd999123e3 = $(`<div id="html_f0a32d37cdba44e6a836a2cd999123e3" style="width: 100.0%; height: 100.0%;">Глазов: 12</div>`)[0];
+            popup_48bb02fd93f944299ba4d26ec4d544b7.setContent(html_f0a32d37cdba44e6a836a2cd999123e3);
+        
+
+        marker_6b24e460d90c4311b2d44771d676ad67.bindPopup(popup_48bb02fd93f944299ba4d26ec4d544b7)
+        ;
+
+        
+    
+    
+            var marker_f06a6b0af93849bea86391d263bacb6c = L.marker(
+                [58.228746, 53.187389],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_70e43d5cd1e340b1a0cf6b23a8b1eb04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f06a6b0af93849bea86391d263bacb6c.setIcon(icon_70e43d5cd1e340b1a0cf6b23a8b1eb04);
+        
+    
+        var popup_251a1b7c34f54d54bb9b644a8fe26af1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5b6443e8bbb4f4195d1a3ebaebad82e = $(`<div id="html_d5b6443e8bbb4f4195d1a3ebaebad82e" style="width: 100.0%; height: 100.0%;">село Карсовай: 56</div>`)[0];
+            popup_251a1b7c34f54d54bb9b644a8fe26af1.setContent(html_d5b6443e8bbb4f4195d1a3ebaebad82e);
+        
+
+        marker_f06a6b0af93849bea86391d263bacb6c.bindPopup(popup_251a1b7c34f54d54bb9b644a8fe26af1)
+        ;
+
+        
+    
+    
+            var marker_38a6118d0f6243e2a067671ed85b8cef = L.marker(
+                [57.890279, 52.24102],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_b9f3e06d76064f928787d34149ccdf80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_38a6118d0f6243e2a067671ed85b8cef.setIcon(icon_b9f3e06d76064f928787d34149ccdf80);
+        
+    
+        var popup_1d8ff822e5954782ab4a17c4e241a805 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5ae345fc9e84846acfd24c467b85169 = $(`<div id="html_c5ae345fc9e84846acfd24c467b85169" style="width: 100.0%; height: 100.0%;">село Юкаменское: 43</div>`)[0];
+            popup_1d8ff822e5954782ab4a17c4e241a805.setContent(html_c5ae345fc9e84846acfd24c467b85169);
+        
+
+        marker_38a6118d0f6243e2a067671ed85b8cef.bindPopup(popup_1d8ff822e5954782ab4a17c4e241a805)
+        ;
+
+        
+    
+    
+            var marker_726bf0b0e3b848089df65274c47a03dd = L.marker(
+                [57.703206, 52.501087],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_329bf1af4c174b3e9b09ea6fcfa9bd2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_726bf0b0e3b848089df65274c47a03dd.setIcon(icon_329bf1af4c174b3e9b09ea6fcfa9bd2e);
+        
+    
+        var popup_f8709d6d7264436e9526f05f167cc0db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4259ea0365940c4bc1b9915934f59d3 = $(`<div id="html_c4259ea0365940c4bc1b9915934f59d3" style="width: 100.0%; height: 100.0%;">село Красногорское: 34</div>`)[0];
+            popup_f8709d6d7264436e9526f05f167cc0db.setContent(html_c4259ea0365940c4bc1b9915934f59d3);
+        
+
+        marker_726bf0b0e3b848089df65274c47a03dd.bindPopup(popup_f8709d6d7264436e9526f05f167cc0db)
+        ;
+
+        
+    
+    
+            var marker_4342f5730af34977b27b33e19b798b85 = L.marker(
+                [57.895489, 53.711815],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_f342e911dfae4301b1590c310757c9e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4342f5730af34977b27b33e19b798b85.setIcon(icon_f342e911dfae4301b1590c310757c9e5);
+        
+    
+        var popup_81a48f29cdc046bcba7417a2a748c07a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7aa135165d6424787ea1efbde537e6d = $(`<div id="html_e7aa135165d6424787ea1efbde537e6d" style="width: 100.0%; height: 100.0%;">посёлок Кез: 17</div>`)[0];
+            popup_81a48f29cdc046bcba7417a2a748c07a.setContent(html_e7aa135165d6424787ea1efbde537e6d);
+        
+
+        marker_4342f5730af34977b27b33e19b798b85.bindPopup(popup_81a48f29cdc046bcba7417a2a748c07a)
+        ;
+
+        
+    
+    
+            var marker_73c493ef4ebd4007a68103c416f3ebd7 = L.marker(
+                [57.651339, 53.806057],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_5f63260f483b4b2fbf824f11faa9b538 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73c493ef4ebd4007a68103c416f3ebd7.setIcon(icon_5f63260f483b4b2fbf824f11faa9b538);
+        
+    
+        var popup_2bbd24834b7e44e6940fcc52c2288e51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c648cfe526a84737a5be3d9efb28a107 = $(`<div id="html_c648cfe526a84737a5be3d9efb28a107" style="width: 100.0%; height: 100.0%;">село Дебёсы: 78</div>`)[0];
+            popup_2bbd24834b7e44e6940fcc52c2288e51.setContent(html_c648cfe526a84737a5be3d9efb28a107);
+        
+
+        marker_73c493ef4ebd4007a68103c416f3ebd7.bindPopup(popup_2bbd24834b7e44e6940fcc52c2288e51)
+        ;
+
+        
+    
+    
+            var marker_cc63d8fd89784a4cbe1ad22997053eaa = L.marker(
+                [57.538614, 53.086967],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_b2228631c7cb4cf98a023934c79a66f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc63d8fd89784a4cbe1ad22997053eaa.setIcon(icon_b2228631c7cb4cf98a023934c79a66f5);
+        
+    
+        var popup_b351bf15a48b409ea1303941169de340 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_966d20df265b45429202e9c4ef55258d = $(`<div id="html_966d20df265b45429202e9c4ef55258d" style="width: 100.0%; height: 100.0%;">посёлок Игра: 24</div>`)[0];
+            popup_b351bf15a48b409ea1303941169de340.setContent(html_966d20df265b45429202e9c4ef55258d);
+        
+
+        marker_cc63d8fd89784a4cbe1ad22997053eaa.bindPopup(popup_b351bf15a48b409ea1303941169de340)
+        ;
+
+        
+    
+    
+            var marker_6c7e4bc929dc4e4e94fa0ab9802c1c4a = L.marker(
+                [57.347483, 52.646828],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_7d20282bdaa14ea4a7959f182f6e607a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6c7e4bc929dc4e4e94fa0ab9802c1c4a.setIcon(icon_7d20282bdaa14ea4a7959f182f6e607a);
+        
+    
+        var popup_2e55fbfc31164f70965b2bdf366fa12b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d483d49a91b544f5a231a7804789c205 = $(`<div id="html_d483d49a91b544f5a231a7804789c205" style="width: 100.0%; height: 100.0%;">село Старые Зятцы: 54</div>`)[0];
+            popup_2e55fbfc31164f70965b2bdf366fa12b.setContent(html_d483d49a91b544f5a231a7804789c205);
+        
+
+        marker_6c7e4bc929dc4e4e94fa0ab9802c1c4a.bindPopup(popup_2e55fbfc31164f70965b2bdf366fa12b)
+        ;
+
+        
+    
+    
+            var marker_e9bfef69906d499cafc6f7f0a9f24150 = L.marker(
+                [57.310808, 52.140083],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_43363e98e09c4e7d945521ebdda9333f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9bfef69906d499cafc6f7f0a9f24150.setIcon(icon_43363e98e09c4e7d945521ebdda9333f);
+        
+    
+        var popup_aaaf9e969deb47a8810d755f68a6badf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8a1de0fbc3345febc3f616e6902148a = $(`<div id="html_f8a1de0fbc3345febc3f616e6902148a" style="width: 100.0%; height: 100.0%;">село Селты: 76</div>`)[0];
+            popup_aaaf9e969deb47a8810d755f68a6badf.setContent(html_f8a1de0fbc3345febc3f616e6902148a);
+        
+
+        marker_e9bfef69906d499cafc6f7f0a9f24150.bindPopup(popup_aaaf9e969deb47a8810d755f68a6badf)
+        ;
+
+        
+    
+    
+            var marker_127da59d09b5405d829be1de45bde840 = L.marker(
+                [57.301146, 53.871288],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_64412bea639f47d48fbaaad5f62c7175 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_127da59d09b5405d829be1de45bde840.setIcon(icon_64412bea639f47d48fbaaad5f62c7175);
+        
+    
+        var popup_64d85bb073b0469a95fdf7dcb532b2a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84523429a90e41459eac6dc9ae13aae5 = $(`<div id="html_84523429a90e41459eac6dc9ae13aae5" style="width: 100.0%; height: 100.0%;">село Шаркан: 123</div>`)[0];
+            popup_64d85bb073b0469a95fdf7dcb532b2a0.setContent(html_84523429a90e41459eac6dc9ae13aae5);
+        
+
+        marker_127da59d09b5405d829be1de45bde840.bindPopup(popup_64d85bb073b0469a95fdf7dcb532b2a0)
+        ;
+
+        
+    
+    
+            var marker_30648fa171444070aeb4f51596ce0445 = L.marker(
+                [57.110075, 51.614799],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_7b705465060c4d12a84c27082b30be33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_30648fa171444070aeb4f51596ce0445.setIcon(icon_7b705465060c4d12a84c27082b30be33);
+        
+    
+        var popup_9e2edadbca834cb08a6c01d0108e86f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c5508e6cf25451494e6041a2cfa34b6 = $(`<div id="html_7c5508e6cf25451494e6041a2cfa34b6" style="width: 100.0%; height: 100.0%;">село Сюмси: 54</div>`)[0];
+            popup_9e2edadbca834cb08a6c01d0108e86f2.setContent(html_7c5508e6cf25451494e6041a2cfa34b6);
+        
+
+        marker_30648fa171444070aeb4f51596ce0445.bindPopup(popup_9e2edadbca834cb08a6c01d0108e86f2)
+        ;
+
+        
+    
+    
+            var marker_791fdf65418645ebbca2312ef78f162b = L.marker(
+                [56.98283, 52.187634],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_ab961f38127e42e3845441303c4e2e87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_791fdf65418645ebbca2312ef78f162b.setIcon(icon_ab961f38127e42e3845441303c4e2e87);
+        
+    
+        var popup_2d33f53e7c364681a62c94c1fd39b85b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a2a8e68249948da84c96d881b483abd = $(`<div id="html_6a2a8e68249948da84c96d881b483abd" style="width: 100.0%; height: 100.0%;">посёлок Ува: 12</div>`)[0];
+            popup_2d33f53e7c364681a62c94c1fd39b85b.setContent(html_6a2a8e68249948da84c96d881b483abd);
+        
+
+        marker_791fdf65418645ebbca2312ef78f162b.bindPopup(popup_2d33f53e7c364681a62c94c1fd39b85b)
+        ;
+
+        
+    
+    
+            var marker_e05ad4457cd64b75a3f3c25d27574dc6 = L.marker(
+                [56.972706, 52.709999],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_49fd4df3949146849bb6fc26f18ba97c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_e05ad4457cd64b75a3f3c25d27574dc6.setIcon(icon_49fd4df3949146849bb6fc26f18ba97c);
+        
+    
+        var popup_a09db6a4c1f7492ab68ad6bf35fd5100 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_657c0b4f4282417782ff1c5f4e47b00d = $(`<div id="html_657c0b4f4282417782ff1c5f4e47b00d" style="width: 100.0%; height: 100.0%;">село Азино: 43</div>`)[0];
+            popup_a09db6a4c1f7492ab68ad6bf35fd5100.setContent(html_657c0b4f4282417782ff1c5f4e47b00d);
+        
+
+        marker_e05ad4457cd64b75a3f3c25d27574dc6.bindPopup(popup_a09db6a4c1f7492ab68ad6bf35fd5100)
+        ;
+
+        
+    
+    
+            var marker_0240fd5e295e4d1fba3cc3aa1765ec31 = L.marker(
+                [57.051746, 53.987331],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_b4a16c096c2d4fcab52d457d0a1f760b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0240fd5e295e4d1fba3cc3aa1765ec31.setIcon(icon_b4a16c096c2d4fcab52d457d0a1f760b);
+        
+    
+        var popup_db3698b1432647c09a5699459da733ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccd18546363746189f1f27cbb52a8566 = $(`<div id="html_ccd18546363746189f1f27cbb52a8566" style="width: 100.0%; height: 100.0%;">Воткинск: 5</div>`)[0];
+            popup_db3698b1432647c09a5699459da733ec.setContent(html_ccd18546363746189f1f27cbb52a8566);
+        
+
+        marker_0240fd5e295e4d1fba3cc3aa1765ec31.bindPopup(popup_db3698b1432647c09a5699459da733ec)
+        ;
+
+        
+    
+    
+            var marker_9bd88f1326954b808f668773cb179be6 = L.marker(
+                [56.852607, 53.206787],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_12c8e87314d34b1f9f65e5af1a91ed57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bd88f1326954b808f668773cb179be6.setIcon(icon_12c8e87314d34b1f9f65e5af1a91ed57);
+        
+    
+        var popup_8aafd798e3a9463c849bb3e1c8b0d59a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c075d4d42804722a6c9f4310c32a721 = $(`<div id="html_8c075d4d42804722a6c9f4310c32a721" style="width: 100.0%; height: 100.0%;">Ижевск: 132</div>`)[0];
+            popup_8aafd798e3a9463c849bb3e1c8b0d59a.setContent(html_8c075d4d42804722a6c9f4310c32a721);
+        
+
+        marker_9bd88f1326954b808f668773cb179be6.bindPopup(popup_8aafd798e3a9463c849bb3e1c8b0d59a)
+        ;
+
+        
+    
+    
+            var marker_94e57853c5324c5c9e09862c88fe1921 = L.marker(
+                [56.774178, 51.926537],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_5b1a7db91ee24691ae010783474d6e11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_94e57853c5324c5c9e09862c88fe1921.setIcon(icon_5b1a7db91ee24691ae010783474d6e11);
+        
+    
+        var popup_22dfd886232846c2a11623845740c753 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9a9d4fb166b47dab542a51fc88f79fe = $(`<div id="html_e9a9d4fb166b47dab542a51fc88f79fe" style="width: 100.0%; height: 100.0%;">село Вавож: 34</div>`)[0];
+            popup_22dfd886232846c2a11623845740c753.setContent(html_e9a9d4fb166b47dab542a51fc88f79fe);
+        
+
+        marker_94e57853c5324c5c9e09862c88fe1921.bindPopup(popup_22dfd886232846c2a11623845740c753)
+        ;
+
+        
+    
+    
+            var marker_0aa930d038c84cfc9ea6977d1e058cb5 = L.marker(
+                [56.759284, 52.367363],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_efee0c7f28574b989580c18fc888430d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0aa930d038c84cfc9ea6977d1e058cb5.setIcon(icon_efee0c7f28574b989580c18fc888430d);
+        
+    
+        var popup_55880a6621904d688715e259b9e5308c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26881ef06c594ad4b883c7c869d38e6e = $(`<div id="html_26881ef06c594ad4b883c7c869d38e6e" style="width: 100.0%; height: 100.0%;">село Нылга: 67</div>`)[0];
+            popup_55880a6621904d688715e259b9e5308c.setContent(html_26881ef06c594ad4b883c7c869d38e6e);
+        
+
+        marker_0aa930d038c84cfc9ea6977d1e058cb5.bindPopup(popup_55880a6621904d688715e259b9e5308c)
+        ;
+
+        
+    
+    
+            var marker_421ec9e8501f4dc9b311e693ceb2fee1 = L.marker(
+                [56.442748, 52.213726],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_801be86932b24c6787016f145ccb857a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_421ec9e8501f4dc9b311e693ceb2fee1.setIcon(icon_801be86932b24c6787016f145ccb857a);
+        
+    
+        var popup_b29ccb5fdcb04213b7ce746a9c203115 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25d38c9833ef4c0a9ebbf615283e2b7e = $(`<div id="html_25d38c9833ef4c0a9ebbf615283e2b7e" style="width: 100.0%; height: 100.0%;">Можга: 12</div>`)[0];
+            popup_b29ccb5fdcb04213b7ce746a9c203115.setContent(html_25d38c9833ef4c0a9ebbf615283e2b7e);
+        
+
+        marker_421ec9e8501f4dc9b311e693ceb2fee1.bindPopup(popup_b29ccb5fdcb04213b7ce746a9c203115)
+        ;
+
+        
+    
+    
+            var marker_47e07ac6eff24b6b9b039948f688a96c = L.marker(
+                [56.283528, 51.516609],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_3067f4edafdb4af48579d7f209889fa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_47e07ac6eff24b6b9b039948f688a96c.setIcon(icon_3067f4edafdb4af48579d7f209889fa1);
+        
+    
+        var popup_2455c1abc79546a0ba0f85ee26ad7dba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0714bcad2f0431799b471961e8e4995 = $(`<div id="html_e0714bcad2f0431799b471961e8e4995" style="width: 100.0%; height: 100.0%;">посёлок Кизнер: 54</div>`)[0];
+            popup_2455c1abc79546a0ba0f85ee26ad7dba.setContent(html_e0714bcad2f0431799b471961e8e4995);
+        
+
+        marker_47e07ac6eff24b6b9b039948f688a96c.bindPopup(popup_2455c1abc79546a0ba0f85ee26ad7dba)
+        ;
+
+        
+    
+    
+            var marker_c013b9681a5945ce8b9a063001e71a6c = L.marker(
+                [56.045798, 51.960697],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_4e8dae9226d24be2a7bf3e6a275ef2d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c013b9681a5945ce8b9a063001e71a6c.setIcon(icon_4e8dae9226d24be2a7bf3e6a275ef2d0);
+        
+    
+        var popup_f17a3893c1e249e1a877f261ed5599ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20aac079dcca42199df97b9b343b3878 = $(`<div id="html_20aac079dcca42199df97b9b343b3878" style="width: 100.0%; height: 100.0%;">село Грахово: 78</div>`)[0];
+            popup_f17a3893c1e249e1a877f261ed5599ef.setContent(html_20aac079dcca42199df97b9b343b3878);
+        
+
+        marker_c013b9681a5945ce8b9a063001e71a6c.bindPopup(popup_f17a3893c1e249e1a877f261ed5599ef)
+        ;
+
+        
+    
+    
+            var marker_808641c90f8c4330a1938b8c24c3a2fb = L.marker(
+                [56.493537, 53.525305],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_48c211a4fc1641ec96be6b0a0392393a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_808641c90f8c4330a1938b8c24c3a2fb.setIcon(icon_48c211a4fc1641ec96be6b0a0392393a);
+        
+    
+        var popup_0b8ca48a0f674a739c0fc1b98e33e5d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60ac01a108ab428eab6e9d374ba15a19 = $(`<div id="html_60ac01a108ab428eab6e9d374ba15a19" style="width: 100.0%; height: 100.0%;">село Уральский: 46</div>`)[0];
+            popup_0b8ca48a0f674a739c0fc1b98e33e5d4.setContent(html_60ac01a108ab428eab6e9d374ba15a19);
+        
+
+        marker_808641c90f8c4330a1938b8c24c3a2fb.bindPopup(popup_0b8ca48a0f674a739c0fc1b98e33e5d4)
+        ;
+
+        
+    
+    
+            var marker_cdf333da7df4412a95f7e2a7a97ce76a = L.marker(
+                [56.659384, 53.464236],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_2619ee4b89cc4d399f3350a57981ee88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_cdf333da7df4412a95f7e2a7a97ce76a.setIcon(icon_2619ee4b89cc4d399f3350a57981ee88);
+        
+    
+        var popup_7eaef1a17bb547d0bf4de76e439bb245 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3320ac0c490942b58b4cf544ed210c71 = $(`<div id="html_3320ac0c490942b58b4cf544ed210c71" style="width: 100.0%; height: 100.0%;">село Бабино: 43</div>`)[0];
+            popup_7eaef1a17bb547d0bf4de76e439bb245.setContent(html_3320ac0c490942b58b4cf544ed210c71);
+        
+
+        marker_cdf333da7df4412a95f7e2a7a97ce76a.bindPopup(popup_7eaef1a17bb547d0bf4de76e439bb245)
+        ;
+
+        
+    
+    
+            var marker_b3de5b067f574e338ac1870821d5d21d = L.marker(
+                [56.648899, 53.760567],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_d19410528f26492d859f1e3b680885e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b3de5b067f574e338ac1870821d5d21d.setIcon(icon_d19410528f26492d859f1e3b680885e0);
+        
+    
+        var popup_f72172d0253348fb958b807b0f5c23ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d40b20a0692a4a46904b958892f81bd1 = $(`<div id="html_d40b20a0692a4a46904b958892f81bd1" style="width: 100.0%; height: 100.0%;">село Нечкино: 23</div>`)[0];
+            popup_f72172d0253348fb958b807b0f5c23ff.setContent(html_d40b20a0692a4a46904b958892f81bd1);
+        
+
+        marker_b3de5b067f574e338ac1870821d5d21d.bindPopup(popup_f72172d0253348fb958b807b0f5c23ff)
+        ;
+
+        
+    
+    
+            var marker_2122af8f325b4c3a89df9ff22318c178 = L.marker(
+                [56.266051, 54.193325],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_5a3057bd578f4fcaa04612d9d346a1b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2122af8f325b4c3a89df9ff22318c178.setIcon(icon_5a3057bd578f4fcaa04612d9d346a1b2);
+        
+    
+        var popup_bc6203c52867487b921b99fbafcd57f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b026969d44594931b3b15ea97c879d77 = $(`<div id="html_b026969d44594931b3b15ea97c879d77" style="width: 100.0%; height: 100.0%;">Камбарка: 65</div>`)[0];
+            popup_bc6203c52867487b921b99fbafcd57f5.setContent(html_b026969d44594931b3b15ea97c879d77);
+        
+
+        marker_2122af8f325b4c3a89df9ff22318c178.bindPopup(popup_bc6203c52867487b921b99fbafcd57f5)
+        ;
+
+        
+    
+    
+            var marker_93a17453ca28489ebdddab66b5985f1c = L.marker(
+                [56.147172, 53.700056],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_f502cc0205094ad6865fed7e65ccb51d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_93a17453ca28489ebdddab66b5985f1c.setIcon(icon_f502cc0205094ad6865fed7e65ccb51d);
+        
+    
+        var popup_d5907b9e0cfc485083925ebc8c4a91c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e0751067114133a54891ed1cdeabf2 = $(`<div id="html_a8e0751067114133a54891ed1cdeabf2" style="width: 100.0%; height: 100.0%;">село Арзамасцево: 4</div>`)[0];
+            popup_d5907b9e0cfc485083925ebc8c4a91c1.setContent(html_a8e0751067114133a54891ed1cdeabf2);
+        
+
+        marker_93a17453ca28489ebdddab66b5985f1c.bindPopup(popup_d5907b9e0cfc485083925ebc8c4a91c1)
+        ;
+
+        
+    
+    
+            var marker_44cfd7986f214d8f918182d8ff5d0da6 = L.marker(
+                [56.016616, 53.704691],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_1a4af794257b4114bdbb9c772d8511b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_44cfd7986f214d8f918182d8ff5d0da6.setIcon(icon_1a4af794257b4114bdbb9c772d8511b5);
+        
+    
+        var popup_36bec636c6d84d309e7d5c2a592521f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d407ddb9809d438987636df0012263cd = $(`<div id="html_d407ddb9809d438987636df0012263cd" style="width: 100.0%; height: 100.0%;">село Каракулино: 45</div>`)[0];
+            popup_36bec636c6d84d309e7d5c2a592521f4.setContent(html_d407ddb9809d438987636df0012263cd);
+        
+
+        marker_44cfd7986f214d8f918182d8ff5d0da6.bindPopup(popup_36bec636c6d84d309e7d5c2a592521f4)
+        ;
+
+        
+    
+    
+            var marker_270f9da559b347b2bf4c410397bb31fc = L.marker(
+                [55.958424, 53.529081],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_64f35c2d262744f0be1de5eec9fd32eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_270f9da559b347b2bf4c410397bb31fc.setIcon(icon_64f35c2d262744f0be1de5eec9fd32eb);
+        
+    
+        var popup_5be74fb37ff54a9e8620bc0bede20189 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d734c376cdd469fa0fb3e0fd5dbdaa9 = $(`<div id="html_0d734c376cdd469fa0fb3e0fd5dbdaa9" style="width: 100.0%; height: 100.0%;">село Чеганда: 65</div>`)[0];
+            popup_5be74fb37ff54a9e8620bc0bede20189.setContent(html_0d734c376cdd469fa0fb3e0fd5dbdaa9);
+        
+
+        marker_270f9da559b347b2bf4c410397bb31fc.bindPopup(popup_5be74fb37ff54a9e8620bc0bede20189)
+        ;
+
+        
+    
+    
+            var marker_e1b7920544e74251b893fd98262bd500 = L.marker(
+                [55.90204, 53.455031],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_8ab4d976d3514f98a9c0bd5fcb1a1162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1b7920544e74251b893fd98262bd500.setIcon(icon_8ab4d976d3514f98a9c0bd5fcb1a1162);
+        
+    
+        var popup_25ed51d088d54e468d924784161b1e2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5829b990941f436f9f65e95d6825b43a = $(`<div id="html_5829b990941f436f9f65e95d6825b43a" style="width: 100.0%; height: 100.0%;">деревня Быргында: 12</div>`)[0];
+            popup_25ed51d088d54e468d924784161b1e2e.setContent(html_5829b990941f436f9f65e95d6825b43a);
+        
+
+        marker_e1b7920544e74251b893fd98262bd500.bindPopup(popup_25ed51d088d54e468d924784161b1e2e)
+        ;
+
+        
+    
+    
+            var marker_181f715f00a140c49cd9f62d9798287e = L.marker(
+                [55.908003, 53.339996],
+                {}
+            ).addTo(map_814274b38f6e4cc19974aef2daa219af);
+        
+    
+            var icon_dc71d3361f574e6582c4bbb447d699bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_181f715f00a140c49cd9f62d9798287e.setIcon(icon_dc71d3361f574e6582c4bbb447d699bb);
+        
+    
+        var popup_516539b8db10413cbc1ffe1b7eac32bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a641ef605ee44b9f9553a0733674184a = $(`<div id="html_a641ef605ee44b9f9553a0733674184a" style="width: 100.0%; height: 100.0%;">деревня Ныргында: 54</div>`)[0];
+            popup_516539b8db10413cbc1ffe1b7eac32bb.setContent(html_a641ef605ee44b9f9553a0733674184a);
+        
+
+        marker_181f715f00a140c49cd9f62d9798287e.bindPopup(popup_516539b8db10413cbc1ffe1b7eac32bb)
+        ;
+
+        
+    
+</script>
