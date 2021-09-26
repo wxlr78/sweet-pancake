@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_29b0f5257e994e0f8050eac824562ace {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_29b0f5257e994e0f8050eac824562ace" ></div>
+        
+</body>
+<script>    
+    
+            var map_29b0f5257e994e0f8050eac824562ace = L.map(
+                "map_29b0f5257e994e0f8050eac824562ace",
+                {
+                    center: [56.85456, 53.206894],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c95dd1d49c13427bad1362bd6b33512e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_29b0f5257e994e0f8050eac824562ace);
+        
+    
+            var marker_79773d2e92d2463c802a686b71bc6798 = L.marker(
+                [56.819821, 53.111537],
+                {}
+            ).addTo(map_29b0f5257e994e0f8050eac824562ace);
+        
+    
+            var icon_fdff6640060d4ca68270852e202c294a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_79773d2e92d2463c802a686b71bc6798.setIcon(icon_fdff6640060d4ca68270852e202c294a);
+        
+    
+        var popup_0c0350dc052f43d49e293b963fa3240b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88fbb0b023c44f6c9cf16540db10a650 = $(`<div id="html_88fbb0b023c44f6c9cf16540db10a650" style="width: 100.0%; height: 100.0%;">Ленинский район, мужчин:438, женщин:438</div>`)[0];
+            popup_0c0350dc052f43d49e293b963fa3240b.setContent(html_88fbb0b023c44f6c9cf16540db10a650);
+        
+
+        marker_79773d2e92d2463c802a686b71bc6798.bindPopup(popup_0c0350dc052f43d49e293b963fa3240b)
+        ;
+
+        
+    
+    
+            var marker_aa19c19f079648ea9a9c285aaeadf014 = L.marker(
+                [56.909723, 53.165138],
+                {}
+            ).addTo(map_29b0f5257e994e0f8050eac824562ace);
+        
+    
+            var icon_30a98f66d0c447e9a65277190b0a836d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa19c19f079648ea9a9c285aaeadf014.setIcon(icon_30a98f66d0c447e9a65277190b0a836d);
+        
+    
+        var popup_39332d24a65b450980698ff0d25288ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2af9a9ec89f940c58451161ff9505f53 = $(`<div id="html_2af9a9ec89f940c58451161ff9505f53" style="width: 100.0%; height: 100.0%;">Октябрьский район, мужчин:654, женщин:234</div>`)[0];
+            popup_39332d24a65b450980698ff0d25288ab.setContent(html_2af9a9ec89f940c58451161ff9505f53);
+        
+
+        marker_aa19c19f079648ea9a9c285aaeadf014.bindPopup(popup_39332d24a65b450980698ff0d25288ab)
+        ;
+
+        
+    
+    
+            var marker_bd5966f8e51d4c7390b0072b0be25819 = L.marker(
+                [56.809529, 53.263092],
+                {}
+            ).addTo(map_29b0f5257e994e0f8050eac824562ace);
+        
+    
+            var icon_59a77d3bc47342488b16e6da5f5991c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd5966f8e51d4c7390b0072b0be25819.setIcon(icon_59a77d3bc47342488b16e6da5f5991c0);
+        
+    
+        var popup_0c6a3140caee46a5acccbe5e9c6a8aed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cd795a94b924e57810e577014a436d1 = $(`<div id="html_3cd795a94b924e57810e577014a436d1" style="width: 100.0%; height: 100.0%;">Первомайский район, мужчин:754, женщин:352</div>`)[0];
+            popup_0c6a3140caee46a5acccbe5e9c6a8aed.setContent(html_3cd795a94b924e57810e577014a436d1);
+        
+
+        marker_bd5966f8e51d4c7390b0072b0be25819.bindPopup(popup_0c6a3140caee46a5acccbe5e9c6a8aed)
+        ;
+
+        
+    
+    
+            var marker_5d103f3e282847018d928bb7d630cf22 = L.marker(
+                [56.885334, 53.298776],
+                {}
+            ).addTo(map_29b0f5257e994e0f8050eac824562ace);
+        
+    
+            var icon_e4485386ab7c46659cc1d6510a716fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d103f3e282847018d928bb7d630cf22.setIcon(icon_e4485386ab7c46659cc1d6510a716fd2);
+        
+    
+        var popup_323ede8c56c344cd80abe47245a66e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad1665adb6f94cd2b2b62b58c0b16d37 = $(`<div id="html_ad1665adb6f94cd2b2b62b58c0b16d37" style="width: 100.0%; height: 100.0%;">Устиновский район, мужчин:432, женщин:234</div>`)[0];
+            popup_323ede8c56c344cd80abe47245a66e22.setContent(html_ad1665adb6f94cd2b2b62b58c0b16d37);
+        
+
+        marker_5d103f3e282847018d928bb7d630cf22.bindPopup(popup_323ede8c56c344cd80abe47245a66e22)
+        ;
+
+        
+    
+    
+            var marker_f7d7883e90c3424fb9ce70ac47291fc0 = L.marker(
+                [56.898077, 53.241259],
+                {}
+            ).addTo(map_29b0f5257e994e0f8050eac824562ace);
+        
+    
+            var icon_8f59c76086244b11804bb7b803a8cd78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f7d7883e90c3424fb9ce70ac47291fc0.setIcon(icon_8f59c76086244b11804bb7b803a8cd78);
+        
+    
+        var popup_cd6deb8e9698421c8d2ff8ad32e251ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67377d0c058b4207ae6dc37fedbc6011 = $(`<div id="html_67377d0c058b4207ae6dc37fedbc6011" style="width: 100.0%; height: 100.0%;">Индустриальный район, мужчин:376, женщин:654</div>`)[0];
+            popup_cd6deb8e9698421c8d2ff8ad32e251ea.setContent(html_67377d0c058b4207ae6dc37fedbc6011);
+        
+
+        marker_f7d7883e90c3424fb9ce70ac47291fc0.bindPopup(popup_cd6deb8e9698421c8d2ff8ad32e251ea)
+        ;
+
+        
+    
+</script>

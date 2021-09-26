@@ -1,0 +1,25 @@
+.flex {
+    display: flex;
+}
+
+.main {
+    flex-direction: column;
+}
+
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn {
+    width: 20vw;
+    height: 10vh;
+    margin: 5vh;
+}
