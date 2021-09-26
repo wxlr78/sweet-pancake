@@ -20,6 +20,7 @@
  </ul>
 <h4>Демо</h4>
 <p>Демо программы доступно по адресу: https://github.com/wxlr78/sweet-pancake/tree/main/map</p>
+<p>Демо сайта доступно по адресу: https://github.com/wxlr78/sweet-pancake/tree/site/index.html</p>
 
 
 СРЕДА ЗАПУСКА
