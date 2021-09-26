@@ -11,7 +11,6 @@
  </ul>
 <h4>Основной стек технологий:</h4>
 <ul>
-    <li>LAMP/LEMP/FAMP/FEMP.</li>
 	<li>Python.</li>
 	<li>Jenkins, Gitlab.</li>
   
