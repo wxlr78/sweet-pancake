@@ -27,7 +27,7 @@
 1) Загрузка Python 3.7+;
 2) Установка библиотек: Folium, Pandas, BeautifulSoup;
 
-
+1) Запуск index.html в браузере Google Chrome.
 
 УСТАНОВКА
 ------------
